@@ -1,25 +1,41 @@
 .home-page{
     width:85%;
-    margin:auto;
     font-family: 'Main-Font';
+    margin:auto;
+    /*position: fixed;
+    bottom:0;*/
 }
 
 .container{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	justify-content: center;
-	margin-right:10%;
+	justify-content: space-between;
+	/*margin:1.66%;/*/
+	align-items: flex-start;
 	/*background-color:green;*/
 }
 
-.layout span{
-	position: absolute;
+
+.layout{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.layout img{
+.layout a{
 	max-width:80%;
-	height: auto;
-
+	/*text-align: center;*/
+	text-decoration: none;
+	text-transform: uppercase;
+	color:black;
+	/*object-fit: contain;*/
 }
+.layout img{
+	max-width:85%;
+	height: auto;
+	padding-top: 4%;
+}
+
 

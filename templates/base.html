@@ -10,7 +10,6 @@
 </head>
 <body>
     <div class = "nav-container">
-        <nav>
             <div class= "nav-links">
                 <a href="#">Home</a>
                 <a href="#">Story</a>
@@ -20,6 +19,7 @@
             <div class = "logo">
                 <img src = "{% static 'Logo.svg' %}">
             </div>
+
             <div class = "icon-list">
                 <a href ="#"><img src="{% static 'social/am.svg' %}" class = "icon-list-img"></a>
                 <a href ="#"><img src="{% static 'social/bc.svg' %}" class = "icon-list-img"></a>
@@ -29,7 +29,6 @@
                 <a href ="#"><img src="{% static 'social/tw.svg' %}" class = "icon-list-img"></a>
                 <a href ="#"><img src="{% static 'social/scl.svg' %}" class = "icon-list-img"></a>
             </div>
-        </nav>
     </div>
     {% block content %}
     {% endblock %}
