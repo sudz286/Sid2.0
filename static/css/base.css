@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Main-Font';
+    src: url("/static/Font/Bold.otf");
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+/*Styling for the nav bar*/
+.nav-container{
+    width:85%;
+    margin:auto;
+    font-family: 'Main-Font';
+}
+
+nav{
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    margin-top:3%;
+    grid-gap: 3%;
+    /*background-color: green;*/
+}
+
+.nav-links{
+    display: flex;
+    border-top:5.5px solid black;
+    margin-top:10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+    font-size:1.5em;
+    text-align: center;
+    margin:0 3%;
+}
+
+.nav-links a:hover{
+    color: grey;
+}
+
+/*Styling for SA logo*/
+
+.logo{
+    grid-column: 2;
+}
+
+.logo img{
+    display: flex;
+    width:82%;
+    height:80%;
+    margin:auto;
+    align-items: center;
+}
+
+/*Styling for Social Media Icons*/
+.icon-list{
+    display: flex;
+    border-top:5.5px solid black;
+    margin-top:10%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon-list a {
+    width:60px;
+    height:60px;
+    display:inline;
+    margin-top:3.5%;
+}
+
+.icon-list-img{
+    margin:0 auto;
+    width:68%;
+    height:60%;
+}

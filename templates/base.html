@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sid Acharya</title>
+    <link href = "{% static 'css/base.css' %}" rel="stylesheet">
+    <link href = "{% static 'Font/Bold.otf' %}">
+    {% block cssfiles %}
+    {% endblock %}
+</head>
+<body>
+    <div class = "nav-container">
+        <nav>
+            <div class= "nav-links">
+                <a href="#">Home</a>
+                <a href="#">Story</a>
+                <a href="#">Tours</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class = "logo">
+                <img src = "{% static 'Logo.svg' %}">
+            </div>
+            <div class = "icon-list">
+                <a href ="#"><img src="{% static 'social/am.svg' %}" class = "icon-list-img"></a>
+                <a href ="#"><img src="{% static 'social/bc.svg' %}" class = "icon-list-img"></a>
+                <a href ="#"><img src="{% static 'social/fb.svg' %}" class = "icon-list-img"></a>
+                <a href ="#"><img src="{% static 'social/ig.svg' %}" class = "icon-list-img"></a>
+                <a href ="#"><img src="{% static 'social/spo.svg' %}" class = "icon-list-img"></a>
+                <a href ="#"><img src="{% static 'social/tw.svg' %}" class = "icon-list-img"></a>
+                <a href ="#"><img src="{% static 'social/scl.svg' %}" class = "icon-list-img"></a>
+            </div>
+        </nav>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

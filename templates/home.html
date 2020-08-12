@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block cssfiles %}
+    <link href = "{% static 'css/home.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class = "home-page">
+        <div class = "container">
+            <div class = "layout story">
+                <span>/Story/</span>
+                <img src = "{% static 'S12.jpg' %}">
+            </div>
+            <div class = "layout tour">
+                <span>/Tours/</span>
+                <img src = "{% static 'S60.jpg' %}">
+            </div>
+            <div class = "layout contact">
+                <span>/Contact/</span>
+                <img src = "{% static 'S6.jpg' %}">
+            </div>
+        </div>
+    </div>
+{% endblock %}

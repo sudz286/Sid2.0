@@ -1,0 +1,25 @@
+.home-page{
+    width:85%;
+    margin:auto;
+    font-family: 'Main-Font';
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	margin-right:10%;
+	/*background-color:green;*/
+}
+
+.layout span{
+	position: absolute;
+}
+
+.layout img{
+	max-width:80%;
+	height: auto;
+
+}
+
