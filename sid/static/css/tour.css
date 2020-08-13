@@ -1,0 +1,54 @@
+.tour-page{
+    width:85%;
+    font-family: 'Main-Font';
+    margin:6% auto 0%;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: flex-start;
+}
+
+.container img{
+	max-width:30%;
+	height: auto;
+	/*padding-top: 4%;*/
+}
+
+.tour-info{
+	display:flex;
+	flex-direction: column;
+	/*justify-content:center;*/
+	/*align-items: center;*/
+	margin-left: 8%;
+	margin-top:5%;
+}
+
+.tour-info a{
+	text-decoration: none;
+	color:rgba(0,0,0,0.8);
+	text-transform: uppercase;
+	font-size:1.3vw;
+}
+
+
+.tour-info ul{
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-family: 'ContentFont';
+}
+
+.tour-info ul li{
+	display: flex;
+	flex-direction: row;
+	margin-right: :10%;
+	margin-top:2%;
+}
+
+
+

@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Main-Font';
+    src: url("/static/Font/Bold.otf");
+}
+@font-face{
+    font-family:'ContentFont';
+    src:url("/static/Font/Medium.otf");
+}
+
+@font-face{
+    font-family: 'EmailFont';
+    src:url("/static/Font/email_address.otf");
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+    overflow-y:hidden;
+}
+
+/*Styling for the nav bar*/
+.nav-container{
+    width:85%;
+    margin:3% auto;
+    font-family: 'Main-Font';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+
+
+.nav-links{
+    border-top:5.5px solid black;
+    width:40%;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    flex-wrap:nowrap;
+    height: 50%;
+    padding-top:7px;
+    /*align-self: flex-end;*/
+}
+
+.nav-links a{
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgba(0,0,0,0.8);
+    font-size:1.3vw;
+    width:16%;
+    margin:3% 4% 3%;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.nav-links a:hover{
+    color: grey;
+}
+
+/*Styling for SA logo*/
+
+.logo{
+    width:15%;
+    margin:auto;
+    padding-bottom: 10px;
+}
+
+.logo img{
+    display: flex;
+    width:100%;
+    height:100%;
+    align-items: center;
+}
+
+/*Styling for Social Media Icons*/
+.icon-list{
+    display: flex;
+    border-top:5.5px solid black;
+    justify-content: center;
+    align-items: center;
+    width:38%;
+    /*height: 50%;*/
+    padding-top:4px;
+    /*align-self: flex-end;*/
+}
+
+
+.icon-list a {
+    width:2.3vw;
+    height:1.8vw;
+    display:flex;
+    justify-content: space-around;
+    margin:3% 2% 3%;
+}
+
+.icon-list-img{
+    margin: auto;
+    width:100%;
+    height: 100%;
+}
+

@@ -1,0 +1,42 @@
+.home-page{
+    width:85%;
+    font-family: 'Main-Font';
+    margin:6% auto 0%;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+.layout{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	/*flex-wrap: wrap;*/
+}
+
+.layout a{
+	max-width:80%;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:rgba(0,0,0,0.8);
+	font-size: 1.3vw;
+}
+
+.layout a:hover{
+	color: grey;
+}
+
+.layout img{
+	max-width:85%;
+	height: auto;
+	padding-top: 4%;
+}
+
+
