@@ -11,10 +11,10 @@
 <body>
     <div class = "nav-container">
             <div class= "nav-links">
-                <a href="#">Home</a>
-                <a href="#">Story</a>
-                <a href="#">Tours</a>
-                <a href="#">Contact</a>
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'story' %}">Story</a>
+                <a href="{% url 'tour' %}">Tours</a>
+                <a href="{% url 'contact' %}">Contact</a>
             </div>
             <div class = "logo">
                 <img src = "{% static 'Logo.svg' %}">

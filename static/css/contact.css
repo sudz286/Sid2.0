@@ -1,0 +1,45 @@
+.contact-page{
+    width:85%;
+    font-family: 'Main-Font';
+    margin:6% auto 0%;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: flex-start;
+}
+
+.container img{
+	max-width:30%;
+	height: auto;
+	/*padding-top: 4%;*/
+}
+
+.contact-info{
+	display:flex;
+	flex-direction: column;
+	/*justify-content:center;*/
+	/*align-items: center;*/
+	margin-left: 8%;
+	margin-top:5%;
+}
+
+.contact-info a{
+	text-decoration: none;
+	color:rgba(0,0,0,0.8);
+	text-transform: uppercase;
+	font-size:1.3vw;
+}
+
+.contact-info p{
+	font-family: 'ContentFont';
+	padding-right:10%;
+	font-size: 1.4vw;
+}
+
+#contact-email{
+	font-family: 'EmailFont';
+	text-transform: lowercase;
+}
