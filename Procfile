@@ -1,0 +1,1 @@
+web: gunicorn kdud.wsgi --log-file -
