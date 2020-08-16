@@ -7,11 +7,11 @@
 	margin-top:5%;
 }
 
-.tour-info a{
+.tour-info h2{
 	text-decoration: none;
 	color:rgba(0,0,0,0.8);
 	text-transform: uppercase;
-	font-size:1.5vw;
+	font-size:1.5rem;
 }
 
 

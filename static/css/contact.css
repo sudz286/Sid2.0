@@ -7,21 +7,22 @@
 	margin-top:5%;
 }
 
-.contact-info a{
+.contact-info h2{
 	text-decoration: none;
 	color:rgba(0,0,0,0.8);
 	text-transform: uppercase;
-	font-size:1.5vw;
+	font-size:1.5rem;
 }
 
 .contact-info p{
 	font-family: 'ContentFont';
 	padding-right:10%;
-	font-size: 1.4vw;
+	font-size: 1.4rem;
 }
 
 #contact-email{
 	font-family: 'EmailFont';
 	text-transform: lowercase;
-	display: inline-block;
+	text-decoration: none;
+	color:rgba(0,0,0,0.8);
 }
