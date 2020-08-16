@@ -23,4 +23,5 @@
 #contact-email{
 	font-family: 'EmailFont';
 	text-transform: lowercase;
+	display: inline-block;
 }

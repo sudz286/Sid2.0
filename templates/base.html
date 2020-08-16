@@ -13,9 +13,9 @@
         <!-- Navbar -->
         <div class = "nav-container">
                 <div class= "nav-links">
-                    <a href="#">Story</a>
-                    <a href="#">Tours</a>
-                    <a href="#">Contact</a>
+                    <a href="#story">Story</a>
+                    <a href="#tour">Tours</a>
+                    <a href="#contact">Contact</a>
                 </div>
 
                 <div class = "logo">
@@ -34,8 +34,8 @@
         </div>
 
         <!-- Home -->
-        <div class = "page">
-            <div class = "container" id="home">
+        <div class = "page" id="home">
+            <div class = "container">
                 <img src = "{% static 'Alone_Alone.jpg' %}">
 
                 <div class = "home-info">
@@ -48,11 +48,11 @@
         </div>
 
         <!-- Story -->
-        <div class = "page">
-            <div class = "container" id="story">
+        <div class = "page" id="story">
+            <div class = "container">
                 <img src = "{% static 'S12.jpg' %}">
                 <div class = "story-info">
-                    <a href = "#">Story //</a>
+                    <a href = "#story">Story //</a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -65,13 +65,13 @@
         </div>
 
         <!-- Tour -->
-        <div class = "page">
-            <div class = "container"  id="tour">
+        <div class = "page" id="tour">
+            <div class = "container">
 
                 <img src = "{% static 'S60.jpg' %}">
 
                 <div class = "tour-info">
-                    <a href = "#">Tours //</a>
+                    <a href = "#tour">Tours //</a>
                     <ul> 
                         {% for item in tour_info %}
                         <li>//{{ item.dates }}//</li> 
@@ -85,11 +85,11 @@
         </div>
 
         <!-- Contact -->
-        <div class = "page">
-            <div class = "container" id ="contact">
+        <div class = "page" id ="contact">
+            <div class = "container">
                 <img src = "{% static 'S6.jpg' %}">
                 <div class = "contact-info">
-                    <a href = "#">Contact //</a>
+                    <a href = "#contact">Contact //</a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -97,7 +97,7 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <a href = "#" id="contact-email">contact@sidacharyamusic.com</a>    
+                    <a href = "mailto:sidacharyamusic@gmail.com" id="contact-email">contact@sidacharyamusic.com</a>    
                 </div>
             </div>
 
