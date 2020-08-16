@@ -12,10 +12,13 @@
     src:url("/static/Font/email_address.otf");
 }
 
+@font-face{
+    font-family: 'Kdud';
+    src:url("/static/Font/kdud.otf");
+}
 html{
     box-sizing: border-box;
     font-size: 100%;
-    overflow-y:hidden;
 }
 
 /*Styling for the nav bar*/
@@ -30,17 +33,13 @@ html{
 }
 
 
-
 .nav-links{
-    border-top:5.5px solid black;
+    border-top:5.5px solid rgba(0,0,0,0.8);
     width:40%;
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
     flex-wrap:nowrap;
     height: 50%;
     padding-top:7px;
-    /*align-self: flex-end;*/
 }
 
 .nav-links a{
@@ -48,11 +47,9 @@ html{
     text-decoration: none;
     text-transform: uppercase;
     color:rgba(0,0,0,0.8);
-    font-size:1.3vw;
-    width:16%;
-    margin:3% 4% 3%;
-    justify-content: center;
-    /*align-items: center;*/
+    font-size:1.35vw;
+    margin:3% auto 3%;
+    padding:0px;
 }
 
 .nav-links a:hover{
@@ -77,7 +74,7 @@ html{
 /*Styling for Social Media Icons*/
 .icon-list{
     display: flex;
-    border-top:5.5px solid black;
+    border-top:5.5px solid rgba(0,0,0,0.8);
     justify-content: center;
     align-items: center;
     width:38%;
@@ -101,3 +98,48 @@ html{
     height: 100%;
 }
 
+/*Styling for each page */
+
+.page{
+    width:85%;
+    font-family: 'Main-Font';
+    height:85vh;
+    margin:6% auto 0%;
+    padding-left: 10%;
+    padding-top:1%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+}
+
+
+.container img{
+    max-width:33%;
+    height: auto;
+    /*padding-top: 4%;*/
+}
+
+
+/*Styling for footer*/
+
+.footer{
+    width:85%;
+    margin:8% auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#footer-icons{
+    border: none; 
+    width:85%;
+    display: flex;
+}
+
+#footer-icons a{
+    margin: 0% 0.8%;
+}

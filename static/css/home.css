@@ -1,42 +1,40 @@
-.home-page{
-    width:85%;
-    font-family: 'Main-Font';
-    margin:6% auto 0%;
-}
-
-.container{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-
-
-.layout{
+.home-info{
 	display:flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	/*flex-wrap: wrap;*/
+	/*justify-content:center;*/
+	/*align-items: center;*/
+	margin-left: 8%;
+	margin-top:5%;
 }
 
-.layout a{
-	max-width:80%;
+.home-info a{
 	text-decoration: none;
-	text-transform: uppercase;
 	color:rgba(0,0,0,0.8);
-	font-size: 1.3vw;
+	text-transform: uppercase;
+	font-size:1.5vw;
+	font-family: 'ContentFont';
+
 }
 
-.layout a:hover{
-	color: grey;
+#home img{
+	border-bottom: 5.5px solid rgba(0,0,0,0.8);
+	padding-bottom: 2vh;
+	width:40%;
 }
 
-.layout img{
-	max-width:85%;
-	height: auto;
-	padding-top: 4%;
+#home-button{
+	background-color: white;
+	border:5px solid rgba(0,0,0,0.8);
+	width:46%;
+	font-size:1.4vw;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Main-Font';
+	padding:2% 0% 0%;
+} 
+
+.home-info h1{
+	font-family: 'Kdud';
+	color: rgba(0,0,0,0.8);
+	margin-top:2%;
 }
-
-

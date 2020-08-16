@@ -4,33 +4,115 @@
 <head>
     <title>Sid Acharya</title>
     <link href = "{% static 'css/base.css' %}" rel="stylesheet">
-    <link href = "{% static 'Font/Bold.otf' %}">
-    {% block cssfiles %}
-    {% endblock %}
+    <link href = "{% static 'css/home.css' %}" rel="stylesheet">
+    <link href = "{% static 'css/story.css' %}" rel="stylesheet">
+    <link href = "{% static 'css/tour.css' %}" rel="stylesheet">
+    <link href = "{% static 'css/contact.css' %}" rel="stylesheet">
 </head>
-<body>
-    <div class = "nav-container">
-            <div class= "nav-links">
-                <a href="{% url 'home' %}">Home</a>
-                <a href="{% url 'story' %}">Story</a>
-                <a href="{% url 'tour' %}">Tours</a>
-                <a href="{% url 'contact' %}">Contact</a>
+    <body>
+        <!-- Navbar -->
+        <div class = "nav-container">
+                <div class= "nav-links">
+                    <a href="#">Story</a>
+                    <a href="#">Tours</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class = "logo">
+                    <img src = "{% static 'Logo.svg' %}">
+                </div>
+
+                <div class = "icon-list">
+                    <a href ="#"><img src="{% static 'social/am.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/bc.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/fb.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/ig.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/spo.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/tw.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/scl.svg' %}" class = "icon-list-img"></a>
+                </div>
+        </div>
+
+        <!-- Home -->
+        <div class = "page">
+            <div class = "container" id="home">
+                <img src = "{% static 'Alone_Alone.jpg' %}">
+
+                <div class = "home-info">
+                    <a href = "#">/ New Single/</a>
+                    <h1>Alone, Alone ft.Kierrah</h1>
+                    <a href="#" id="home-button">Listen Now!</a>
+                </div>
+
             </div>
-            <div class = "logo">
-                <img src = "{% static 'Logo.svg' %}">
+        </div>
+
+        <!-- Story -->
+        <div class = "page">
+            <div class = "container" id="story">
+                <img src = "{% static 'S12.jpg' %}">
+                <div class = "story-info">
+                    <a href = "#">Story //</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>    
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour -->
+        <div class = "page">
+            <div class = "container"  id="tour">
+
+                <img src = "{% static 'S60.jpg' %}">
+
+                <div class = "tour-info">
+                    <a href = "#">Tours //</a>
+                    <ul> 
+                        {% for item in tour_info %}
+                        <li>//{{ item.dates }}//</li> 
+                        <li>//{{ item.time}}</li>
+                        <li>{{ item.venue }}</li>
+                        <li>/{{ item.band }}/</li> 
+                        {% endfor %}
+                    </ul>   
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class = "page">
+            <div class = "container" id ="contact">
+                <img src = "{% static 'S6.jpg' %}">
+                <div class = "contact-info">
+                    <a href = "#">Contact //</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a href = "#" id="contact-email">contact@sidacharyamusic.com</a>    
+                </div>
             </div>
 
-            <div class = "icon-list">
-                <a href ="#"><img src="{% static 'social/am.svg' %}" class = "icon-list-img"></a>
-                <a href ="#"><img src="{% static 'social/bc.svg' %}" class = "icon-list-img"></a>
-                <a href ="#"><img src="{% static 'social/fb.svg' %}" class = "icon-list-img"></a>
-                <a href ="#"><img src="{% static 'social/ig.svg' %}" class = "icon-list-img"></a>
-                <a href ="#"><img src="{% static 'social/spo.svg' %}" class = "icon-list-img"></a>
-                <a href ="#"><img src="{% static 'social/tw.svg' %}" class = "icon-list-img"></a>
-                <a href ="#"><img src="{% static 'social/scl.svg' %}" class = "icon-list-img"></a>
+            <!-- Footer -->
+            <div class="footer">
+            <div class = "icon-list" id="footer-icons">
+                    <a href ="#"><img src="{% static 'social/am.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/bc.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/fb.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/ig.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/spo.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/tw.svg' %}" class = "icon-list-img"></a>
+                    <a href ="#"><img src="{% static 'social/scl.svg' %}" class = "icon-list-img"></a>
+                </div>
             </div>
-    </div>
-    {% block content %}
-    {% endblock %}
-</body>
+        </div>
+    </body>
 </html>
