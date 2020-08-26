@@ -36,10 +36,9 @@ html{
 
 .nav-links{
     border-top:5.5px solid rgba(0,0,0,0.8);
-    width:40%;
+    width:41%;
     display: flex;
     flex-wrap:nowrap;
-    height: 50%;
     padding-top:7px;
 }
 
@@ -62,7 +61,7 @@ html{
 /*Styling for SA logo*/
 
 .logo{
-    width:15%;
+    width:16%;
     margin:auto;
     padding-bottom: 10px;
 }
@@ -83,7 +82,6 @@ html{
     width:38%;
     /*height: 50%;*/
     padding-top:4px;
-    /*align-self: flex-end;*/
 }
 
 
@@ -112,7 +110,7 @@ html{
 .page{
     width:85%;
     font-family: 'Main-Font';
-    height:80vh;
+    height:auto;
     margin:6% auto 0%;
     padding-left: 10%;
     padding-top:1%;
@@ -152,3 +150,67 @@ html{
 #footer-icons a{
     margin: 0% 0.8%;
 }
+
+
+@media (max-device-width: 500px){
+
+    /*Navbar styling */
+    .nav-container{
+        margin: 6% auto;
+    }
+
+    .nav-links{
+        border-top:2px solid rgba(0,0,0,0.8);
+        width:65%;
+        display: flex;
+        flex-wrap:nowrap;
+        align-self: flex-end;
+    }
+
+    .nav-links a{
+        font-size: 2.8vw;
+        margin-top: 3%;
+    }
+
+    .logo{
+        width:23.5%;
+        padding-bottom:10px;
+        margin-right: 0px;
+    }
+
+    .logo img{
+        display: flex;
+        width:100%;
+        height:100%;
+    }
+
+    .nav-container .icon-list{
+        visibility: hidden;
+        width:0px;
+        height: 0px
+    }
+
+    /*Styling for each page */
+
+    .page{
+        width:85%;
+        font-family: 'Main-Font';
+        height:auto;
+        padding-left:0%;
+        padding-top:0%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: space-around;
+    }
+
+    .container img{
+        max-width:100%;
+        height: auto;
+    }
+
+}
+

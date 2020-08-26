@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="{% static 'Favicon.svg' %}" type="image/icon type">
     <title>Sid Acharya</title>
     <link href = "{% static 'css/base.css' %}" rel="stylesheet">
     <link href = "{% static 'css/home.css' %}" rel="stylesheet">
@@ -72,30 +74,29 @@
 
                 <div class = "tour-info">
                     <h2>Tours //</h2>
-                    <ul> 
+                    <div class = "row">
                         {% for item in tour_info %}
-                        <li>//{{ item.dates }}//</li> 
-                        <li>//{{ item.time}}</li>
-                        <li>{{ item.venue }}</li>
-                        <li>/{{ item.band }}/</li> 
-                        {% endfor %}
-                    </ul>   
+                        <span>//{{ item.dates }}//</span> 
+                        <span>{{ item.venue }}</span>
+                    </div>
+                    <div class = "row">
+                        <span>//{{ item.time}}</span>
+                        <span>/{{ item.band }}/</span> 
+                        {% endfor %} 
+                    </div>
                 </div>
+
             </div>
         </div>
 
         <!-- Contact -->
         <div class = "page" id ="contact">
             <div class = "container">
-                <img src = "{% static 'S6.jpg' %}">
+                <img src = "{% static 'S6.jpg' %}" id = "contact-image">
                 <div class = "contact-info">
                     <h2>Contact //</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <a href = "mailto:sidacharyamusic@gmail.com" id="contact-email">contact@sidacharyamusic.com</a>    
                 </div>
@@ -114,5 +115,6 @@
                 </div>
             </div>
         </div>
+
     </body>
 </html>

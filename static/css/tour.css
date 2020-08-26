@@ -1,9 +1,7 @@
 .tour-info{
 	display:flex;
 	flex-direction: column;
-	/*justify-content:center;*/
-	/*align-items: center;*/
-	margin-left: 8%;
+	margin-left:8%;
 	margin-top:5%;
 }
 
@@ -11,25 +9,36 @@
 	text-decoration: none;
 	color:rgba(0,0,0,0.8);
 	text-transform: uppercase;
-	font-size:1.5rem;
+	font-size:1.5vw;
 }
 
-
-.tour-info ul{
-	list-style: none;
-	padding-left: 0;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	font-family: 'ContentFont';
+.tour-info .row{
+	display:flex;
 }
 
-.tour-info ul li{
-	display: flex;
-	flex-direction: row;
-	margin-right: :10%;
-	margin-top:2%;
+.tour-info span{
+	font-size: 1.4vw;
 }
 
+@media (max-device-width: 500px){
+	
+	#tour img{
+		visibility: hidden;
+		width:0%;
+		height: 0%;
+	}
 
+	.tour-info{
+	margin-left:2%;
+	margin-top:0%;
+	}
 
+	.tour-info h2{
+		font-size:3vw;
+	}
+
+	.tour-info p{
+		font-size: 3vw;
+	}
+
+}

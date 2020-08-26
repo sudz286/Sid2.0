@@ -1,8 +1,6 @@
 .story-info{
 	display:flex;
 	flex-direction: column;
-	/*justify-content:center;*/
-	/*align-items: center;*/
 	margin-left: 8%;
 	margin-top:5%;
 }
@@ -11,12 +9,35 @@
 	text-decoration: none;
 	color:rgba(0,0,0,0.8);
 	text-transform: uppercase;
-	font-size:1.5rem;
+	font-size:1.5vw;
 }
 
 .story-info p{
 	font-family: 'ContentFont';
 	padding-right:10%;
-	font-size: 1.4rem;
+	font-size: 1.4vw;
 }
 
+
+@media (max-device-width: 500px){
+
+	#story img{
+		visibility: hidden;
+		width:0%;
+		height: 0%;
+	}
+
+	.story-info{
+	margin-left:2%;
+	margin-top:0%;
+	}
+
+	.story-info h2{
+		font-size:3vw;
+	}
+
+	.story-info p{
+		font-size: 3vw;
+	}
+
+}
