@@ -26,6 +26,8 @@
 	font-size: 1.6vw;
 }
 
+/*Media Query for extra small devices*/
+
 @media (max-device-width: 500px){
 
 	#contact-image{
@@ -35,8 +37,8 @@
 	}
 
 	.contact-info{
-	margin-left:2%;
-	margin-top:0%;
+		margin-left:2%;
+		margin-top:0%;
 	}
 
 	.contact-info h2{

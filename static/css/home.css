@@ -48,16 +48,47 @@
 }
 
 
-/*Small devices*/
+@media (min-device-width:501px) and (max-device-width:1023px){
+	#home-button{
+		border:3px solid rgba(0,0,0,0.8);
+		font-size:1.6vw;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: 'Main-Font';
+		padding:2% 0% 0%;
+		transition: none;
+		width:26%;
+	} 
+
+	#home-button:hover{
+		font-size:1.65vw;
+		width:26%;
+	}	
+
+	.home-info h1{
+		font-family: 'Kdud';
+		color: rgba(0,0,0,0.8);
+		margin-top:2%;
+		font-size: 5vw;
+	}
+
+	#home img{
+		border-bottom: 3px solid rgba(0,0,0,0.8);
+	}	
+
+}
+
+/*Media Query for extra small devices*/
+
 @media (max-device-width: 500px){
 
 	.home-info{
-	display:flex;
-	flex-direction: column;
-	margin-left:2%;
+		display:flex;
+		flex-direction: column;
+		margin-left:2%;
 	}
 
-		#home img{
+	#home img{
 		border-bottom: 3px solid rgba(0,0,0,0.8);
 		padding-bottom: 1vh;
 		width:65%;
@@ -79,7 +110,11 @@
 		text-align: center;
 		font-family: 'Main-Font';
 		padding:2% 0% 0%;
-		transition: width 0.2s linear,font-size 0.2 linear;
+		transition: none;
 	} 
+
+	#home-button:hover{
+		font-size:3vw;
+	}
 
 }

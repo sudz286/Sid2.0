@@ -1,3 +1,4 @@
+/* Loading Fonts for each section*/ 
 @font-face {
     font-family: 'Main-Font';
     src: url("/static/Font/Bold.otf");
@@ -61,7 +62,7 @@ html{
 /*Styling for SA logo*/
 
 .logo{
-    width:16%;
+    width:14.7%;
     margin:auto;
     padding-bottom: 10px;
 }
@@ -74,6 +75,7 @@ html{
 }
 
 /*Styling for Social Media Icons in Navbar*/
+
 .icon-list{
     display: flex;
     border-top:5.5px solid rgba(0,0,0,0.8);
@@ -130,8 +132,21 @@ html{
     /*padding-top: 4%;*/
 }
 
+#arrow1{
+    width:3%;
+    position: absolute;
+    min-height:30%;
+    top:480px;
+    right:2vw;
+}
 
-/*Styling for footer*/
+#arrow2{
+    border:5px solid rgba(0,0,0,0.8);
+    width:1px;
+    height:300px;
+}
+
+/*Styling for footer icons*/
 
 .footer{
     width:85%;
@@ -151,6 +166,22 @@ html{
     margin: 0% 0.8%;
 }
 
+
+@media (min-device-width:501px) and (max-device-width:1023px){
+    .nav-links{
+        border-top:3px solid rgba(0,0,0,0.8);
+
+    }
+
+    .icon-list{
+        border-top:3px solid rgba(0,0,0,0.8);
+        padding-top:6.45px;
+    }
+    
+}
+
+
+/*Media Query for extra small devices*/
 
 @media (max-device-width: 500px){
 
@@ -172,6 +203,11 @@ html{
         margin-top: 3%;
     }
 
+    .nav-links a:hover{
+        color: rgba(0,0,0,0.8);
+        font-size:2.8vw;
+    }
+
     .logo{
         width:23.5%;
         padding-bottom:10px;
@@ -191,7 +227,6 @@ html{
     }
 
     /*Styling for each page */
-
     .page{
         width:85%;
         font-family: 'Main-Font';

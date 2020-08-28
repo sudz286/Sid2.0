@@ -20,6 +20,8 @@
 	font-size: 1.4vw;
 }
 
+/*Media Query for extra small devices*/
+
 @media (max-device-width: 500px){
 	
 	#tour img{
