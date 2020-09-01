@@ -47,6 +47,7 @@
 	margin-top:2%;
 }
 
+/*Media Query for medium sized devices*/
 
 @media (min-device-width:501px) and (max-device-width:1023px){
 	#home-button{

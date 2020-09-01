@@ -9,7 +9,7 @@
     <link href = "{% static 'css/home.css' %}" rel="stylesheet">
     <link href = "{% static 'css/story.css' %}" rel="stylesheet">
     <link href = "{% static 'css/tour.css' %}" rel="stylesheet">
-    <link href = "{% static 'css/contact.css' %}" rel="stylesheet">
+    <link href = "{% static 'css/contact.css' %}" rel="stylesheet"> 
 </head>
     <body>
         <!-- Navbar -->
@@ -49,6 +49,7 @@
         </div>
 
         <!-- Arrow -->
+        
         <div id="arrow1">
             <img src = "{% static 'Scroll.svg' %}">
         </div>
@@ -69,9 +70,6 @@
             </div>
         </div>
 
-        <!-- Arrow -->
-        
-
         <!-- Tour -->
         <div class = "page" id="tour">
             <div class = "container">
@@ -84,7 +82,7 @@
                     {% for item in tour_info %}
                     <table>
                         <tr>
-                            <td class = 'cell-info' style = "{width:50px;}">//{{ item.dates }}//</td>
+                            <td class = 'cell-info'>//{{ item.dates }}//</td>
                             <td >-</td>
                             <td class = 'cell-info'>{{ item.venue }}</td>
                         </tr>
@@ -98,16 +96,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class = "row">
-                        {% for item in tour_info %}
-                        <span>//{{ item.dates }}//</span> 
-                        <span>{{ item.venue }}</span>
-                    </div>
-                    <div class = "row">
-                        <span>//{{ item.time}}</span>
-                        <span>/{{ item.band }}/</span> 
-                        {% endfor %} 
-                    </div> -->
+
         <!-- Contact -->
         <div class = "page" id ="contact">
             <div class = "container">

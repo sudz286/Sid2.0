@@ -1,0 +1,37 @@
+
+
+admin:sid
+pw:Sid1958123
+
+Saarland(Germany) DONE	Might Apply
+University de Bonn	DONE	Might Apply
+KaiserSlautern TU 	DONE	Might Apply
+Rosenheim U of applied sciences	DONE German 
+U of Gottinghen DONE	Not great	
+Frankfurt U of A.S 	Not great
+U of Augsburg	DONE German
+U of konstanz	DONE Will surely Apply
+U of Rostock	Not great
+OVGU magdeburg	Not Great
+Paderborn University 	German
+Trier University 	Done Might Apply
+BHT Berlin	-Data Science 	Done Might Apply
+UDE-Essen(Comp Engineering)	Won't apply
+FH Deggendorf-Applied MSc CS	Done Embedded Systems. Won't apply
+U of  Potsdam-Datascience	Done Definitely Apply 
+Hiedelberg SRH 	Done Might Apply
+U of Stuttgart	Done Might Apply
+U of Seiegen-Applied CS	 Done Won't apply
+Mannheim-Data science 	Done Might Apply
+Passau CS	DOne Might Apply
+Bayreuth CS	
+Bielefeld DS
+
+Georg August University Goettingen
+Université Grenoble-Alpes
+
+Uni Amsterdam
+Delft
+Twente
+Eindhoven
+VU University of Amsterdam

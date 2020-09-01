@@ -41,12 +41,15 @@ td{
 	left:-4vw;
 }
 
+/*Media Query for medium sized devices*/
+
 @media (min-device-width:501px) and (max-device-width:1023px){
 
 	#arrow2{
 		border-left:3px solid rgba(0,0,0,0.8);
 	}
 }
+
 /*Media Query for extra small devices*/
 
 @media (max-device-width: 500px){
@@ -84,4 +87,5 @@ td{
 		position: absolute;
 		left:0vw;
 	}
+	
 }

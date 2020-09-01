@@ -82,7 +82,6 @@ html{
     justify-content: center;
     align-items: center;
     width:38%;
-    /*height: 50%;*/
     padding-top:4px;
 }
 
@@ -130,7 +129,6 @@ html{
 .container img{
     max-width:33%;
     height: auto;
-    /*padding-top: 4%;*/
 }
 
 #arrow1{
@@ -163,6 +161,8 @@ html{
     margin: 0% 0.8%;
 }
 
+
+/*Media Query for medium sized devices*/
 
 @media (min-device-width:501px) and (max-device-width:1023px){
     .nav-links{
