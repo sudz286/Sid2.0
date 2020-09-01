@@ -16,10 +16,37 @@
 	display:flex;
 }
 
-.tour-info span{
-	font-size: 1.4vw;
+table{
+	font-family: 'ContentFont';
+	font-size:1.3vw;
+	padding-bottom: 2%;
 }
 
+td{
+	text-align: left;
+	width:50px;
+}
+
+.cell-info{
+	width:280px;
+}
+
+#arrow2{
+	display:inline-block; 
+	width:0;
+	height:18vw;
+	border-left:5px solid rgba(0,0,0,0.8);
+	padding-left:5%;
+	position: absolute;
+	left:-4vw;
+}
+
+@media (min-device-width:501px) and (max-device-width:1023px){
+
+	#arrow2{
+		border-left:3px solid rgba(0,0,0,0.8);
+	}
+}
 /*Media Query for extra small devices*/
 
 @media (max-device-width: 500px){
@@ -31,8 +58,8 @@
 	}
 
 	.tour-info{
-	margin-left:2%;
-	margin-top:0%;
+		margin-left:10%;
+		margin-top:0%;
 	}
 
 	.tour-info h2{
@@ -43,4 +70,18 @@
 		font-size: 3vw;
 	}
 
+	table{
+		font-family: 'ContentFont';
+		font-size:3vw;
+	}
+
+	#arrow2{
+		display:inline-block; 
+		width:0;
+		height:18vw;
+		border-left:1.5px solid rgba(0,0,0,0.8);
+		padding-left:5%;
+		position: absolute;
+		left:0vw;
+	}
 }

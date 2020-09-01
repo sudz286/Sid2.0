@@ -3,6 +3,7 @@
 	flex-direction: column;
 	margin-left: 8%;
 	margin-top:5%;
+	width:100%;
 }
 
 .contact-info h2{
@@ -24,6 +25,23 @@
 	text-decoration: none;
 	color:rgba(0,0,0,0.8);
 	font-size: 1.6vw;
+}
+
+
+#arrow3{
+	position: relative;
+	width:0;	
+    right:2vw;
+    height:18vw;
+	border-left:5px solid rgba(0,0,0,0.8);
+}
+
+@media (min-device-width:501px) and (max-device-width:1023px){
+
+	#arrow3{
+		border-left:3px solid rgba(0,0,0,0.8);
+	}
+
 }
 
 /*Media Query for extra small devices*/
@@ -73,5 +91,13 @@
     	margin: 0% 0.8%;
 	}	
 
+	#arrow3{
+		position: absolute;
+		width:0;	
+	    right:0vw;
+	    top:-11vw;
+	    height:18vw;
+		border-left:1.5px solid rgba(0,0,0,0.8);
+	}
 
 }

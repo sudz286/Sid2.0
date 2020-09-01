@@ -25,13 +25,13 @@
                 </div>
 
                 <div class = "icon-list">
-                    <a href ="#"><img src="{% static 'social/am.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/bc.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/fb.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/ig.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/spo.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/tw.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/scl.svg' %}" class = "icon-list-img"></a>
+                    <a href ="https://music.apple.com/ca/artist/sid-acharya/1475698117"><img src="{% static 'social/am.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://sidacharyamusic.bandcamp.com/"><img src="{% static 'social/bc.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://www.facebook.com/sidacharyamusic"><img src="{% static 'social/fb.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://www.instagram.com/sidacharyamusic/"><img src="{% static 'social/ig.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://open.spotify.com/artist/0DFrCKsF3dgiAew8rOl48Q"><img src="{% static 'social/spo.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="http://twitter.com/sidacharyamusic"><img src="{% static 'social/tw.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://soundcloud.com/sidacharyamusic"><img src="{% static 'social/scl.svg' %}" class = "icon-list-img" target = "_blank"></a>
                 </div>
         </div>
 
@@ -42,7 +42,7 @@
 
                 <div class = "home-info">
                     <h2>/ New Single/</h2>
-                    <h1>Alone, Alone ft.Kierrah</h1>
+                    <h1>Stories of Charlottetown</h1>
                     <a href="#" id="home-button">Listen Now!</a>
                 </div>
             </div>
@@ -59,30 +59,46 @@
                 <img src = "{% static 'S12.jpg' %}">
                 <div class = "story-info">
                     <h2>Story //</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p>Keyboardist, Composer and Producer - Sid Acharya is a 19 year old musician working on the fusion of Eastern and Western sounds with a unique splash of Electronic resonance.
+                    <br><br>
+                    He pursues a Music Performance Degree at Holland College, Canada on a pathway program to the Berklee School of Music, Boston. Born in Chennai, India, his childhood led to an exposure of a myriad of styles. This has furnished him with an unparalleled ability to adapt and evolve as a composer, producer and performer. Caught in the evolving process of exploring and building his own sound, his style is an attempt to unify those of Indian classical, jazz and world music.
+                    <br><br>
+                    Sid Acharya creates a unique electronic sound, where his Indian classical roots fuse vibrantly with his ambient, jazz and world music explorations.
                     </p>    
                 </div>
             </div>
         </div>
 
         <!-- Arrow -->
-        <!-- <div id = "arrow2">
-            
-        </div>
- -->
+        
+
         <!-- Tour -->
         <div class = "page" id="tour">
             <div class = "container">
+                <span id = "arrow2">
+                </span>
                 <img src = "{% static 'S65.jpg' %}">
 
                 <div class = "tour-info">
                     <h2>Tours //</h2>
-                    <div class = "row">
+                    {% for item in tour_info %}
+                    <table>
+                        <tr>
+                            <td class = 'cell-info' style = "{width:50px;}">//{{ item.dates }}//</td>
+                            <td >-</td>
+                            <td class = 'cell-info'>{{ item.venue }}</td>
+                        </tr>
+                        <tr>
+                            <td class = 'cell-info'>//{{ item.time }}</td>
+                            <td>&nbsp;</td>
+                            <td class = 'cell-info'>/{{ item.band }}/</td>
+                        </tr>
+                    </table>
+                    {% endfor %} 
+                </div>
+            </div>
+        </div>
+        <!-- <div class = "row">
                         {% for item in tour_info %}
                         <span>//{{ item.dates }}//</span> 
                         <span>{{ item.venue }}</span>
@@ -91,35 +107,30 @@
                         <span>//{{ item.time}}</span>
                         <span>/{{ item.band }}/</span> 
                         {% endfor %} 
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+                    </div> -->
         <!-- Contact -->
         <div class = "page" id ="contact">
             <div class = "container">
                 <img src = "{% static 'S64.jpg' %}" id = "contact-image">
                 <div class = "contact-info">
                     <h2>Contact //</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <a href = "mailto:sidacharyamusic@gmail.com" id="contact-email">contact@sidacharyamusic.com</a>    
+                    <p>For Bookings/Collaborations.Shoot me a mail!</p>
+                    <span><a href = "mailto:sidacharyamusic@gmail.com" id="contact-email">contact@sidacharyamusic.com</a></span>    
                 </div>
+                <span id = "arrow3">
+                </span>
             </div>
 
             <!-- Footer -->
             <div class="footer">
             <div class = "icon-list" id="footer-icons">
-                    <a href ="#"><img src="{% static 'social/am.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/bc.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/fb.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/ig.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/spo.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/tw.svg' %}" class = "icon-list-img"></a>
-                    <a href ="#"><img src="{% static 'social/scl.svg' %}" class = "icon-list-img"></a>
+                    <a href ="https://music.apple.com/ca/artist/sid-acharya/1475698117"><img src="{% static 'social/am.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://sidacharyamusic.bandcamp.com/"><img src="{% static 'social/bc.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://www.facebook.com/sidacharyamusic"><img src="{% static 'social/fb.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://www.instagram.com/sidacharyamusic/"><img src="{% static 'social/ig.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://open.spotify.com/artist/0DFrCKsF3dgiAew8rOl48Q"><img src="{% static 'social/spo.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="http://twitter.com/sidacharyamusic"><img src="{% static 'social/tw.svg' %}" class = "icon-list-img" target = "_blank"></a>
+                    <a href ="https://soundcloud.com/sidacharyamusic"><img src="{% static 'social/scl.svg' %}" class = "icon-list-img" target = "_blank"></a>
                 </div>
             </div>
         </div>

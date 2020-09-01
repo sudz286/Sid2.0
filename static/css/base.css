@@ -123,6 +123,7 @@ html{
     flex-direction: row;
     width: 100%;
     align-items: flex-start;
+    position:relative;
 }
 
 
@@ -136,15 +137,11 @@ html{
     width:3%;
     position: absolute;
     min-height:30%;
-    top:480px;
+    top:40vw;
     right:2vw;
 }
 
-#arrow2{
-    border:5px solid rgba(0,0,0,0.8);
-    width:1px;
-    height:300px;
-}
+
 
 /*Styling for footer icons*/
 
@@ -209,7 +206,7 @@ html{
     }
 
     .logo{
-        width:23.5%;
+        width:24%;
         padding-bottom:10px;
         margin-right: 0px;
     }
@@ -245,6 +242,14 @@ html{
     .container img{
         max-width:100%;
         height: auto;
+    }
+
+    #arrow1{
+        width:3%;
+        position: absolute;
+        min-height:30%;
+        top:110vw;
+        right:8vw;
     }
 
 }
