@@ -11,8 +11,15 @@
 	text-transform: uppercase;
 	font-size:1.5vw;
 	font-family: 'ContentFont';
-
 }
+
+.home-info h3{
+	font-family: 'Kdud';
+	color: rgba(0,0,0,0.8);
+	margin-bottom:5%;
+	text-transform: uppercase;
+}
+
 .home-info a{
 	text-decoration: none;
 	color:rgba(0,0,0,0.8);
@@ -45,6 +52,7 @@
 	font-family: 'Kdud';
 	color: rgba(0,0,0,0.8);
 	margin-top:2%;
+	margin-bottom: 0px;
 }
 
 /*Media Query for medium sized devices*/
@@ -70,7 +78,11 @@
 		font-family: 'Kdud';
 		color: rgba(0,0,0,0.8);
 		margin-top:2%;
-		font-size: 5vw;
+		font-size: 4vw;
+	}
+
+	.home-info h3{
+		font-size: 2vw;
 	}
 
 	#home img{
@@ -102,6 +114,10 @@
 	.home-info h1{
 		margin-top:0%;
 		font-size: 5vw;
+	}
+
+	.home-info h3{
+		font-size: 3vw;
 	}
 
 	#home-button{
