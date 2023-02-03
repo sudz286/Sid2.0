@@ -2,7 +2,7 @@
 Website built for musician [Sid A](https://www.instagram.com/sidacharyamusic/) using HTML, vanilla Javascript and CSS.
 [Website Link](https://kdud.herokuapp.com/)
 
-# Screenshots of frontend design
+## Screenshots of responsive frontend design
 
 ![Screenshot_20230202_090746](https://user-images.githubusercontent.com/41768585/216495449-6f28f8bc-6482-4e4a-9113-f1bd37b4f12c.png)
 
